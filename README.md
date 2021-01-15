@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# React Coding Challenge
 
-## Available Scripts
+###### Built by Ross Hazelett
 
-In the project directory, you can run:
+## Purpose
 
-### `yarn start`
+This app is my submission to a react coding challenge.
+In short, the primary requirements were:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Make an app for a struggling local movie theater
+2. Access a third party API
+3. Show a Discover Movies section that returns movies and displays them by popularity
+4. Allow user to search for movies and return movies from the API based on their search query
+5. Filter movies by their 1-10 rating using a 5 star system
+6. Overall design is less important than the functionality of the code
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Notable Design Features
 
-### `yarn test`
+##### State Management
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I used Redux for state management and API calls. More specifically Redux Toolkit, which I learned while building this project and came to love for it's simplicity and the way it's organized. There were a few different ways I could have organized the project. I wanted to show a variety of React skills in this project, so I used App level state, prop drilling, as well as global redux state to handle all the various functionality.
 
-### `yarn build`
+##### Filtering
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I chose to keep filtering within the component right before rendering. There are other ways I could have done this. I could have populated a separate list in redux derived from the data returned from the api, and I could have used a redux selector.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+##### Modals
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I used a package called react-spring-modal to handle the modal for Detail View. I am a big fan of react-spring, a wonderful animation library. React-spring-modal is build on top of the functionality of react-spring, and it seemed like a simple and clean solution to what I needed for this project.
 
-### `yarn eject`
+##### Nav Links
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I included nav links just to make it feel like a real website. Since navigation to different pages was outside the scope of the challenge, I didn't include any nav link functionality.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technology
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### React Client
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- The entire client was built in React
 
-## Learn More
+##### Back End
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The back end was a third party api called "themoviedb"
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### Redux Toolkit
 
-### Code Splitting
+- Which has Redux Thunk built in
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+##### React Spring Modal
 
-### Analyzing the Bundle Size
+- A great modal library
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+##### CSS Modules
 
-### Making a Progressive Web App
+- Keeps class names scoped to component
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Try Out My App
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. I deployed the app to Netlify [here](https://react-code-challenge-ross-hazelett.netlify.app/)
+2. The Github repository for the React client is [here](https://github.com/noobiwankenoobi/react-code-challenge) - clone or download project from here
