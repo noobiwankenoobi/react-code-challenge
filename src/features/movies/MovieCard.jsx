@@ -10,7 +10,6 @@ const MovieCard = ({ movie, handleClickMovie }) => {
   // Handle Movie Card Click
   ///////////////////////////////
   const handleMovieCardClick = () => {
-    console.log("movie clicked is", movie);
     handleClickMovie(movie);
     // Open up details view
   };

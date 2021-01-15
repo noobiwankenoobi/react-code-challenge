@@ -15,7 +15,7 @@ const StarFilter = ({ setFilterValue }) => {
   /////////////////////////////////////
   // Handling Selection of All Stars to the Left of Current Selected
   useEffect(() => {
-    console.log("currentSelected index is ", currentSelected);
+    // console.log("currentSelected index is ", currentSelected);
     const newArray = [];
     if (currentSelected !== null) {
       for (let index = 0; index < 5; index++) {
