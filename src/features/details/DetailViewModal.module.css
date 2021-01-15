@@ -1,0 +1,9 @@
+.detail_view {
+  position: "absolute";
+  bottom: 0;
+  padding: "1rem 2rem";
+  border-radius: "0.5rem";
+  background-color: "grey";
+  height: "90%";
+  width: "100%";
+}

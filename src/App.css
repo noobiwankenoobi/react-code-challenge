@@ -1,4 +1,18 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.vertical-wrapper {
+  padding: 2.5rem 0;
+}
+
+.horizontal-wrapper {
+  padding: 0 5rem;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +50,4 @@
   100% {
     transform: translateY(0px)
   }
-}
+} */

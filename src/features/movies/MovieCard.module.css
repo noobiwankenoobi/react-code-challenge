@@ -1,0 +1,17 @@
+.main {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main:hover {
+  transition: ease-in-out 300ms;
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+
+.poster {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}

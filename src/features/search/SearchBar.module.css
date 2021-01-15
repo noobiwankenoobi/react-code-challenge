@@ -1,0 +1,49 @@
+.icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_container {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-color: rgba(160, 174, 192, 0.75);
+  border-radius: 0.5rem;
+}
+
+.search_container:focus-within {
+  border-color: rgba(113, 128, 150, 0.75);
+  width: 100%;
+}
+
+.outer_container {
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  width: auto;
+}
+
+.input {
+  width: 350px;
+  margin-left: 0.5rem;
+  outline: none;
+  border: none;
+  line-height: 1.5rem;
+  /* font-size: 1.25rem; */
+}
+
+.submit_btn {
+  height: 100%;
+  width: 5rem;
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  color: gray;
+  padding: 0.5rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+}

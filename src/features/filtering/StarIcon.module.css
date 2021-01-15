@@ -1,0 +1,11 @@
+.star_selected {
+  color: #8b482e;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.star_unselected {
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+}
