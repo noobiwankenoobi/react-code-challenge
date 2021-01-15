@@ -9,9 +9,6 @@ import SearchArea from "./features/search/SearchArea";
 
 function App() {
   const [filterValue, setFilterValue] = useState(null);
-  // useEffect(() => {
-  //   console.log("filterValue inside app is ", filterValue);
-  // }, [filterValue]);
 
   return (
     <div className="App">

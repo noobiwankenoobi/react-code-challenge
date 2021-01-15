@@ -18,7 +18,7 @@ export const getDiscoverMovies = createAsyncThunk(
   async (__, thunkAPI) => {
     try {
       const response = await axios.get(discoverMoviesUrl);
-      console.log("response is", response);
+      // console.log("response is", response);
       return response.data.results;
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ export const discoverMoviesSlice = createSlice({
     [getDiscoverMovies.fulfilled]: (state, { payload }) => {
       state.status = "success";
       state.discoveredMovies = payload;
-      console.log("payload", payload);
+      // console.log("payload", payload);
     },
     [getDiscoverMovies.rejected]: (state, action) => {
       state.status = "failed";

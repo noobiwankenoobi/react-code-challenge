@@ -47,7 +47,6 @@ export const searchMoviesSlice = createSlice({
     [getSearchMovies.fulfilled]: (state, { payload }) => {
       state.status = "success";
       state.searchedMovies = payload;
-      console.log("payload", payload);
     },
     [getSearchMovies.rejected]: (state, action) => {
       state.status = "failed";

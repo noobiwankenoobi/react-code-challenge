@@ -20,16 +20,15 @@ const SearchBar = () => {
   const searchContainerRef = useRef(null);
 
   // Debug
-  useEffect(() => {
-    console.log("searchValue is", searchValue);
-  }, [searchValue]);
+  // useEffect(() => {
+  //   console.log("searchValue is", searchValue);
+  // }, [searchValue]);
 
   //////////////////////////////////////////////////////
   // Clear Search Results if searchValue is empty
   ////////////////////////////////////////////////////
   useEffect(() => {
     if (!searchValue && searchMovies) {
-      console.log("SET RESULTS TO EMPTY");
       // Set results to empty with reducer action
       dispatch(clearSearch());
       dispatch(setView("discover"));
