@@ -6,7 +6,7 @@ import { X } from "react-feather";
 
 const DetailContent = ({ currentMovie, setOpen }) => {
   return (
-    <div className={styles.detail_main} onClick={() => setOpen(false)}>
+    <div className={styles.detail_main}>
       <div className={styles.detail_area}>
         <button className={styles.close_btn} onClick={() => setOpen(false)}>
           <X size={32} />

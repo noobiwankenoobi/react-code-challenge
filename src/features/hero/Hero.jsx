@@ -12,7 +12,7 @@ const Hero = () => {
   ///////////////////
   const heroMain = (
     <div className={styles.main}>
-      <div className={styles.overlay} />
+      {/* <div className={styles.overlay} /> */}
       <img src={multipass} className={styles.image} alt="fifth-element" />
       {/* <img src={mainImageUrl} className={styles.image} alt="fifth-element" /> */}
       <div className={styles.header_container}>
